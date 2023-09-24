@@ -1,4 +1,5 @@
 import slidewindow.*;
+import stack.EvalRPN;
 import twopoiter.*;
 
 import java.util.*;
@@ -17,8 +18,10 @@ public class Main {
 
         String sequences = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
 
-        ThreeSum threeSum = new ThreeSum();
-        threeSum.threeSum(nums);
+        String[] tokens = new String[]{"4","13","5","/","+"};
+
+        EvalRPN evalRPN = new EvalRPN();
+        var tmp = evalRPN.evalRPN(tokens);
         var tmp2 = 0;
     }
 }
