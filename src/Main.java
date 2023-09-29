@@ -1,16 +1,11 @@
-import slidewindow.*;
-import stack.DailyTemperatures;
-import stack.EvalRPN;
-import stack.GenerateParenthesis;
-import twopoiter.*;
-
-import java.util.*;
+import stack.MonotonicStack;
+import stack.NextGreaterElement;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        int[] nums = new int[] {73,74,75,71,69,72,76,73};
+        int[] nums = new int[] {73,74,75,71,69,60,76,73};
         int k = 3;
 
         int[] prices = new int[] {3,3,5,0,0,3,1,4};
@@ -22,8 +17,8 @@ public class Main {
 
         String[] tokens = new String[]{"4","13","5","/","+"};
 
-        DailyTemperatures dailyTemperatures = new DailyTemperatures();
-        dailyTemperatures.dailyTemperatures(nums);
+        NextGreaterElement nextGreaterElement = new NextGreaterElement();
+        nextGreaterElement.nextGreaterElement(nums);
         var tmp2 = 0;
     }
 }
