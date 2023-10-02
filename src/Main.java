@@ -1,5 +1,6 @@
 import stack.MonotonicStack;
 import stack.NextGreaterElement;
+import stack.NextGreaterElementI;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,8 +18,11 @@ public class Main {
 
         String[] tokens = new String[]{"4","13","5","/","+"};
 
-        NextGreaterElement nextGreaterElement = new NextGreaterElement();
-        nextGreaterElement.nextGreaterElement(nums);
+        int[] nums1 = new int[] {4,1,2};
+        int[] nums2 = new int[] {1,3,4,2};
+
+        NextGreaterElementI nextGreaterElementI = new NextGreaterElementI();
+        nextGreaterElementI.nextGreaterElement(nums1, nums2);
         var tmp2 = 0;
     }
 }
