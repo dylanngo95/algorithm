@@ -1,4 +1,7 @@
 import collection.UserMap;
+import serialization.SerializationTest;
+
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,8 +13,15 @@ public class Main {
 //        HashMapTest hmTest = new HashMapTest();
 //        hmTest.run();
 
-        UserMap user = new UserMap();
-        user.run();
+//        UserMap user = new UserMap();
+//        user.run();
+
+        SerializationTest s = new SerializationTest();
+        try {
+            s.run();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
         int[] nums = new int[] {1,2,3,4,3};
         int k = 3;

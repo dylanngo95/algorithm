@@ -1,7 +1,5 @@
 package collection;
 
-import org.openjdk.jol.vm.VM;
-
 import java.util.ArrayList;
 import java.util.List;
 
